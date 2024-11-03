@@ -1,0 +1,71 @@
+!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>მუსიკა და აუდიო</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        .media-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .media-item {
+            margin: 10px;
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>მუსიკა და აუდიო</h1>
+
+    <h2>ვიდეოები</h2>
+    <div class="media-container">
+       
+        <div class="media-item">
+            <video width="300" controls>
+                <source src="video1.mp4" type="video/mp4">
+               
+            </video>
+        </div>
+        <div class="media-item">
+            <video width="300" controls>
+                <source src="video2.mp4" type="video/mp4">
+               
+            </video>
+        </div>
+        <!-- დამატება 18 ვიდეოს -->
+    </div>
+
+    <h2>აუდიო</h2>
+    <div class="media-container">
+        <!-- აუდიოები -->
+        <div class="media-item">
+            <audio controls>
+                <source src="audio1.mp3" type="audio/mpeg">
+               
+            </audio>
+        </div>
+        <div class="media-item">
+            <audio controls>
+                <source src="audio2.mp3" type="audio/mpeg">
+               
+            </audio>
+        </div>
+   
+    </div>
+
+</body>
+</html>
+
+
+
+
