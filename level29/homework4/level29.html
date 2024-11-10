@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Div with Image and Text Styling</title>
+    <style>
+        /* Div styling */
+        .image-container {
+            background-color: lightgray;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Text styling inside the div */
+        .image-container p {
+            font-size: 20px;
+            color: darkblue;
+            margin-top: 10px;
+        }
+
+        /* Image styling */
+        .image-container img {
+            width: 150px;
+            height: auto;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Div block with image and text -->
+    <div class="image-container">
+        <img src=data:image/png;base64,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 alt="Example Image">
+        <p>This is a paragraph inside a styled div block with light gray background and dark blue text.</p>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Sign Up</title>
+    <style>
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Body styling */
+        body {
+            background-color: #f0f2f5;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Header styling */
+        .header {
+            width: 100%;
+            background-color: #4267B2;
+            padding: 20px;
+            text-align: center;
+            color: #fff;
+            font-size: 36px;
+            font-weight: bold;
+        }
+
+        /* Container styling */
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            width: 80%;
+            max-width: 1000px;
+            margin: 50px 0;
+        }
+
+        /* Left side content */
+        .left-content {
+            flex: 1;
+            margin-right: 20px;
+        }
+
+        .left-content h2 {
+            font-size: 28px;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .left-content p {
+            font-size: 20px;
+            color: #333;
+        }
+
+        /* Sign up form */
+        .signup-form {
+            flex: 1;
+            max-width: 400px;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .signup-form h2 {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .input-group {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+
+        .input-group input {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .input-field {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .birthdate-label {
+            font-size: 12px;
+            color: #606770;
+        }
+
+        .birthdate-group select {
+            width: 32%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .gender-group {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+        }
+
+        .gender-group label {
+            font-size: 16px;
+            color: #606770;
+        }
+
+        .gender-group input {
+            margin-right: 10px;
+        }
+
+        .signup-button {
+            width: 100%;
+            padding: 12px;
+            background-color: #42b72a;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        .signup-button:hover {
+            background-color: #36a420;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 14px;
+            color: #606770;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        Facebook
+    </div>
+
+    <!-- Container -->
+    <div class="container">
+        <!-- Left content -->
+        <div class="left-content">
+            <h2>Connect with friends and the world around you on Facebook.</h2>
+            <p>See photos and updates from friends in News Feed.</p>
+            <p>Share what's new in your life on your Timeline.</p>
+            <p>Find more of what you're looking for with Facebook Search.</p>
+        </div>
+
+        <!-- Sign up form -->
+        <div class="signup-form">
+            <h2>Create a New Account</h2>
+
+            <!-- Input groups -->
+            <div class="input-group">
+                <input type="text" placeholder="First name" required>
+                <input type="text" placeholder="Last name" required>
+            </div>
+            <input type="email" class="input-field" placeholder="Mobile number or email" required>
+            <input type="password" class="input-field" placeholder="New password" required>
+
+            <label class="birthdate-label">Birthday</label>
+            <div class="birthdate-group">
+                <select required>
+                    <option value="">Day</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <!-- Add remaining days -->
+                </select>
+                <select required>
+                    <option value="">Month</option>
+                    <option value="1">January</option>
+                    <option value="2">February</option>
+                    <!-- Add remaining months -->
+                </select>
+                <select required>
+                    <option value="">Year</option>
+                    <option value="2000">2000</option>
+                    <option value="1999">1999</option>
+                    <!-- Add remaining years -->
+                </select>
+            </div>
+
+            <!-- Gender group -->
+            <div class="gender-group">
+                <label><input type="radio" name="gender" required> Female</label>
+                <label><input type="radio" name="gender" required> Male</label>
+                <label><input type="radio" name="gender" required> Custom</label>
+            </div>
+
+            <!-- Sign up button -->
+            <button class="signup-button">Sign Up</button>
+
+            <!-- Footer -->
+            <div class="footer">
+                <p>By clicking Sign Up, you agree to our Terms, Data Policy, and Cookie Policy.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
